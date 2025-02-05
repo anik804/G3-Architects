@@ -71,12 +71,9 @@
     text-decoration: none;
     color: rgba(66, 66, 66, 1);
 }
-.banner{
-    
 
-}
 .navbar, .banner{
-    max-width: 1440px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -103,4 +100,33 @@
     .navbar,.nav-item{
         flex-direction: column;
     }
+}
+
+/* main section */
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+
+}
+
+.feature-title{
+    font-size: 45px;
+}
+.feature-description{
+    font-size: 1rem;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
 }
