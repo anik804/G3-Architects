@@ -106,6 +106,9 @@ main > section{
 }
 
 /* our features */
+.section-title{
+    font-size: 45px;
+}
 .feature-title{
     font-size: 45px;
 }
@@ -129,24 +132,42 @@ main > section{
 .features{
     gap: 140px;
 }
-.section-title{
-    font-size: 45px;
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
 }
-.sec-description{
-    font-size: 16px;
-}
-#feature-border{
-    border-left: 5px solid orangered;
-    padding-left: 21px;
-}
-.feature-card-container{
-    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.08);
+
+.feature-card{
     padding: 30px;
-    margin-bottom: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
 }
-.card-head,.card-description{
-    font-size: 20px;
+
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img{
+    width: 100%;
+    height: 100%;
 }
 
 /* fact section */
@@ -220,7 +241,7 @@ footer {
 
 /* responsive media query */
 @media screen and (max-width: 576px){
-    .navbar,.nav-item,.teams{
+    .navbar,.nav-item,.teams,.features{
         flex-direction: column;
     }
     .team-img-container,.facts-container{
@@ -243,10 +264,14 @@ footer {
         justify-content: center;
         margin: auto;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 /* our feature section */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .team-img-container,.facts-container{
@@ -256,7 +281,7 @@ footer {
         justify-items: center;
         gap: 24px;
     }
-    .our-features,.fact-description,.fact-head{
+    .our-features{
         margin : 50px auto;
     }
     .sponsors{
@@ -269,5 +294,14 @@ footer {
         align-items: center;
         justify-content: center;
         margin: auto;
+    }
+    #experience-badge{
+        margin-top: 80px;
+        margin-left: 200px;
+    }
+    .fact-head,.fact-description{
+        padding-left: 50px;
+        align-items: center;
+        justify-content: center;
     }
 }
