@@ -125,7 +125,29 @@ main > section{
     gap: 1.5rem;
 }
 
-
+/* features section */
+.features{
+    gap: 140px;
+}
+.section-title{
+    font-size: 45px;
+}
+.sec-description{
+    font-size: 16px;
+}
+#feature-border{
+    border-left: 5px solid orangered;
+    padding-left: 21px;
+}
+.feature-card-container{
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.card-head,.card-description{
+    font-size: 20px;
+}
 
 /* fact section */
 .facts-container{
