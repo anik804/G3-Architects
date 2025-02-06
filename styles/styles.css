@@ -160,8 +160,21 @@ main > section{
     margin-top: 2px;
 }
 
-
-
+/* sponsor part */
+.sponsor-head{
+    font-size: 45px;
+    text-align: center;
+}
+.sponsor-description{
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.sponsors{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
 
 
 
@@ -197,6 +210,17 @@ footer {
     .our-features,.fact-head,.fact-description{
         margin: 16px 16px;
     }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sponsor-img{
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 }
 /* our feature section */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -212,5 +236,16 @@ footer {
     }
     .our-features,.fact-description,.fact-head{
         margin : 50px auto;
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sponsor-img{
+        width: auto;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
 }
